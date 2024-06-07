@@ -1,0 +1,65 @@
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* PSEUDO CLASES */
+
+/* ! Anatomia de la pseudo-clase 
+
+* etiqueta:pseudo-clase
+* id:pseudo-clase
+* .clase:pseudo-clase
+
+*/
+
+/* 
+* 1. :link
+* 2. :visited
+* 3. :hover
+* 4. :active
+*/
+
+/* 1. :link -> Modifica visualmente el elemento si no ha sido visitado */
+
+.enlace:link { /* 1 */
+    color: violet;
+}
+
+/* 2. :visited -> Modifica visualmente el elemento que si fue visitado */
+
+.enlace:visited { /* 2 */
+    color: darkblue;
+}
+
+/* 3. :hover -> Modifica visualmente el elemento si paso por encima con el puntero */
+
+.enlace:hover { /* 3 */
+    background-color: crimson;
+    text-decoration: underline;
+}
+
+/* 4. :active -> Modifica visualmente el elemento cuando presiono el link. Le hago click */
+
+.enlace:active { /* 4 */
+    color: darkolivegreen;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

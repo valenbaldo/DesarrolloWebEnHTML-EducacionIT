@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Emmet</title>
+</head>
+<body>
+    <h1>Emmet</h1>
+    <!-- https://docs.emmet.io/cheat-sheet/ -->
+
+    <h2>Child</h2>
+    <!-- ! Child:  > (hijo) -->
+    <!-- ul>li -->
+    <ul>
+        <li></li>
+    </ul>
+
+    <!-- h3>strong -->
+    <h3><strong></strong></h3>
+
+    <!-- Shorctus -->
+    <!-- Ctrl + Espaciadora -> Recupero la sugerencia -->
+
+    <h2>Multiplication</h2>
+    <!-- ! Multiplication: * -->
+
+    <!-- ul>li*3 -->
+    <ul>
+        <li>Primer item</li>
+        <li>Segundo item</li>
+        <li>Tercer item</li>
+    </ul>
+
+    <h2>Sibling</h2>
+    <!-- Sibling: + (hermano) -->
+
+    <!-- h3+p+p+h4+h5+p+h6 -->
+    <h3>Esto es un h3</h3>
+    <p>esto es un p</p>
+    <p>Esto es otro p</p>
+    <h4>Esto es un h4</h4>
+    <h5>Esto es un h5</h5>
+    <p>otro parrafo mas</p>
+    <h6>tengo un h6</h6>
+
+    <h2>Item numbering - Text</h2>
+    <!-- Item numbering: $ - Text: {} -->
+
+    <!-- ul>li{Esto es un item $}*5 -->
+    <ul>
+        <li>Esto es un item 1</li>
+        <li>Esto es un item 2</li>
+        <li>Esto es un item 3</li>
+        <li>Esto es un item 4</li>
+        <li>Esto es un item 5</li>
+    </ul>
+
+    <!-- p.item-$*5 -->
+    <!-- p.item-$*5{Esto es el parrafo Nro: $} -->
+    <p class="item-1">Esto es el parrafo Nro: 1</p>
+    <p class="item-2">Esto es el parrafo Nro: 2</p>
+    <p class="item-3">Esto es el parrafo Nro: 3</p>
+    <p class="item-4">Esto es el parrafo Nro: 4</p>
+    <p class="item-5">Esto es el parrafo Nro: 5</p>
+
+    <h2>ID and CLASS attributes</h2>
+
+    <!-- ! CLASS -->
+    <!-- h3.texto-grande -->
+    <h3 class="texto-grande"></h3>
+
+    <!-- ! ID -->
+    <!-- h3#texto-destacado -->
+    <h3 id="texto-destacado"></h3>
+
+    <!-- h3.texto-grande.texto-rojo.texto-con-borde#texto-destacado -->
+    <h3 class="texto-grande texto-rojo texto-con-borde" id="texto-destacado"></h3>
+
+    <h2>Climb-up</h2>
+    <!-- Climb-up: ^ -->
+
+    <ul>
+        <li>
+            <h3></h3>
+            <p><strong></strong></p>
+        </li>
+    </ul>
+    <p></p>
+
+    <!-- (ul>li>h3+p>strong)+p -->
+    <!-- ul>li>h3+p>strong^^^p -->
+    <ul>
+        <li>
+            <h3>Esto es un titulo 3</h3>
+            <p><strong>Que talco!</strong></p>
+        </li>
+    </ul>
+    <p>P como hermano de la lista</p>
+
+    <h2>Custom attributes</h2>
+    <!-- Custom attributes - [] -->
+
+    <!-- h3[class=pepito] -->
+    <h3 class="pepito"></h3>
+    <!-- a[href=https://google.com.ar]{Link a Google} -->
+    <a href="https://google.com.ar">Link a Google</a>
+    
+</body>
+</html>

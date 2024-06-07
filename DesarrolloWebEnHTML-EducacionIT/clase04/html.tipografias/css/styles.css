@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
+
+/* Tipografìas seguras (Web hace tiempo) */
+.texto-secundario {
+    font-family: Sevillana, cursive;
+    font-size: 100px; /* fz */
+}
+
+p {
+    /* font-family: 'Times New Roman', Times, serif; */
+    font-family: "Noto Sans", sans-serif; /* ff */
+    font-size: 30px;
+    font-weight: 600; /* fw */
+    font-style: normal; /* fs */
+    line-height: 50px; /* Espaciado entre oraciones de un parrafo */
+}
+
+.lista-principal li {
+    font-size: 20px;
+    line-height: 40px;
+    margin-bottom: 50px;
+    margin-block-end: 50px;
+}
+
+

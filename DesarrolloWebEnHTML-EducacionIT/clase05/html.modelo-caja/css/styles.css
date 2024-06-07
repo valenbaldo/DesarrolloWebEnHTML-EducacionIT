@@ -1,0 +1,124 @@
+
+/* ! ancho y alto (CONTENIDO) */
+
+#ancho-alto {
+    height: 200px;
+    width: 300px;
+    background-color: crimson;
+}
+
+#ancho-alto-2 {
+    width: 150px;
+    height: 220px;
+    background-color: darkkhaki;
+}
+
+/* ! padding (ESPACIADO INTERNO) */
+/* Entre el contenido y el borde */
+#espaciado-interno, 
+#espaciado-interno-2, 
+#espaciado-interno-3 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+#espaciado-interno {
+    padding-top: 20px;
+    padding-right: 15px;
+    padding-left: 25px;
+    padding-bottom: 25px;
+}
+
+#espaciado-interno-2 {
+    background-color: darkorange;
+    padding: 20px; /* shorthands (todos los lados van a tener 20px */
+    
+    padding: 20px 50px; /* arriba/abajo izquierda/derecha  */
+}
+
+#espaciado-interno-3 {
+    background-color: darkviolet;
+    /* sentido de la agujas del reloj (horario) */
+    /*       top right bottom left */
+    padding: 20px 50px 10px 0;
+}
+
+/* ! Border (borde) borde de la caja */
+
+#borde, #borde-2, #borde-3 {
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+}
+
+#borde {
+    border-left-color: black;
+    border-left-style: dotted;
+    border-left-width: 10px;
+    border-right-color: black;
+    border-right-style: solid;
+    border-right-width: 2px;
+    border-top-color: black;
+    border-top-style: dashed;
+    border-top-width: 20px;
+    border-bottom-color: black;
+    border-bottom-style: double;
+    border-bottom-width: 7px;
+}
+#borde-2 {
+    background-color: blueviolet;
+    
+    /* shorthand */
+    border-color:blue;
+    border-style: solid;
+
+    border-left-width: 10px;
+    border-right-width: 2px;
+    border-top-width: 20px;
+    border-bottom-width: 7px;
+}
+
+#borde-3 {
+    background-color: darkgreen;
+
+    /* shorthand */
+    border: 10px solid black;
+}
+
+/* ! Margin ( margen externo ) */
+/* Entre el borde y los demás elemeentos */
+/* MARGIN acepta valores negativos */
+/* Margenes arriba/abajo se pueden solapar */
+#espaciado-externo, #espaciado-externo-2, #espaciado-externo-3 {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+}
+
+#espaciado-externo {
+    margin-top: -22px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    margin-right: 2px;
+}
+
+#espaciado-externo-2 {
+    background-color: purple;
+    /* shorthand */
+    margin: 20px;
+}
+
+#espaciado-externo-3 {
+    background-color: blue;
+    /* Sentido horario */
+    /*      top  right bottom left */
+    margin: 20px 15px 7px 0;
+}
+
+
+
+
+
+
+

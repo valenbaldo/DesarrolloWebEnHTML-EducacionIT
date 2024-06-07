@@ -1,0 +1,65 @@
+/* Hoja de estilo! (Style Sheet) */
+
+/* ! Selector etiqueta (Muy poco especifico) */
+h2 {
+    color: pink;
+    font-size: 100px;
+}
+
+/* ! Selector CLASS (Tiene mas prioridad) (Un poco mas especifico que la etiqueta) */ /* Normalemente clases para estilos */
+.clase {
+    color: purple;
+}
+
+/* ! Selector ID (Tiene mas prioridad) (Es un poco más especifico que la clase)*/ /* Normalemente ids para javascript */
+#identificador {
+    color: orange;
+}
+
+/* --------------- utilitarias */
+
+.fuente-grande {
+    font-size: 50px;
+} 
+
+.fuente-mediano {
+    font-size: 30px;
+}
+
+.fuente-chico {
+    font-size: 15px;
+}
+
+.color-verde {
+    color: green;
+}
+
+.color-rojo {
+    color: red;
+}
+
+.color-azul {
+    color: blue;
+}
+
+.borde-chiquito {
+    border: 1px solid black;
+}
+
+.borde-mediano {
+    border: 4px solid black;
+}
+
+.borde-grande {
+    border: 6px solid black;
+}
+
+#texto-imporante {
+    color: crimson;
+    font-size: 50px;
+}
+
+
+.color-rojo.borde-grande {
+    color: blueviolet;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="css/styles.css"> <!-- General -->
+
+    <!-- ! 2da forma --> <!-- Salvo 1%... -->
+    <style>
+        /* selector de etiquetas */
+        h2 {
+            color: darkorange;
+            font-size: 40px;
+        }
+    </style>
+    
+
+    <title>Estilos CSS en un documento HTML</title>
+</head>
+<body>
+    <h1>Estilos CSS en un documento HTML</h1>
+    <hr>
+
+    <!-- 3 formas para incorporar los estilos -->
+
+    <!-- ! 1era forma --> <!-- Salvo 1%... -->
+    <!-- anatomia de las etiqueta html -->
+    <!-- <h2 atributo1="valor1" atributo2="valor2" atributo3="valor3" atributo4>1era forma (Estilo en linea)</h2> -->
+    
+    <h2 style="color: green; font-size: 30px;">1era forma (Estilo en linea)</h2>
+
+    <!-- ! 2da forma --> <!-- Salvo 1%... -->
+    <h2>2da forma (Estilo interno)</h2>
+
+    <!-- ! 3era forma --> <!-- Siempre 98% -->
+    <h2>3era forma (Estilo externo) [archivo con extesion .css donde voy a colocar los estilos en forma independiente al doc HTML]</h2>
+
+    <!--          -->
+    <!-- Clase    -->
+    <!--          -->
+
+    <p class="clase">Lorem, ipsum.</p>
+    
+    <!--       -->
+    <!-- ID    -->
+    <!--       -->
+
+    <p id="identificador">Lorem ipsum dolor sit.</p>
+
+    <!--  utilitarias -->
+
+    <p class="fuente-grande color-azul borde-grande">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, rem.</p>
+
+    <p class="fuente-mediano color-rojo borde-chiquito borde-grande">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, rem.</p>
+
+    <p class="fuente-chico color-verde borde-mediano">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, rem.</p>
+
+    <p class="fuente-chico color-rojo borde-grande">Maxi, ipsum dolor.</p>
+
+    <!--  id -->
+
+    <!-- ! No puedo colocar por atributo mas de un id -->
+    <!-- ! No puedo tener con un mismo id por documento html -->
+
+    <p>Lorem, <strong id="texto-imporante">ipsum</strong> dolor.</p>
+    <p>Lorem, <em id="texto-imporante">ipsum</em> dolor.</p> <!--  -->
+    
+</body>
+</html>

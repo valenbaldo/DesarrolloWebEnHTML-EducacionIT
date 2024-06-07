@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Formularios GET</title>
+</head>
+<body>
+    <h1>Formularios GET</h1>
+    <hr>
+
+    <!-- Los formularios nos permiten enviar información a un servidor -->
+    <!-- Para crear un formuarlio utilizo la etiqueta <form></form> -->
+    <!-- ! Atributos de la etiqueta <form></form> -->
+    <!-- 
+      * action: A donde voy a enviar la información (ruta o url a donde se va a enviar o donde estar el servidor) La URL del backend
+      * method: Los formularios solo pueden trabajar con el método GET y el método POST (https://developer.mozilla.org/es/docs/Web/HTTP/Methods)
+        * GET: Envia la información a través de la URL. (Por defecto envía la info a través del método GET)
+        * POST: Enviar la información a través del cuerpo del documento. (body)
+      * target: Es muy parecido al target de los links (etiqueta a)
+        * _self: Envia la información y todo se ve en la misma pestaña
+        * _blank: Envia la información abriendo una nueva pestaña
+     -->
+     <!-- 
+      ! Dentro de los formularios voy a tener una serie etiquetas -->
+     <!-- 
+        * label: Me da información sobre que tengo que escribir en el input 
+            ? for: 'username' Me vincula al input. Me permite decirle que este esta asociado a un input en particular
+        * input: Es el campo donde voy a poder escribir la información
+          ? type: text, password, number, color, date, hidden...
+          ? value: No es obligatorio. Si tiene algo, lo muestra como ingreso del campo.
+          ? name: 'username' La variable donde se va a guardar la información que escriba el usuario en el input
+          ? id: 'username' 
+        * button o a: Me va a permitir enviar la información. Enviar el formulario -> 
+    -->
+
+    <!-- 
+        https://www.google.com/search?q=bitcoin
+        https://www.google.com/search -> (?q=bitcoin) -> query string -> ?variable1=pepito&variable2=fulanito
+
+        https://ar.search.yahoo.com/search?p=manzana
+        https://ar.search.yahoo.com/search -> (?p=manzana) -> query string
+     -->
+
+     <h2>Google</h2>
+
+     <form action="https://www.google.com/search" method="GET" target="_blank">
+        <label for="buscador-google">Buscar:</label>
+        <input type="search" name="q" id="buscador-google"> <!-- variable para almacenar la informaicón que escriba el usuario en este input -->
+        <button type="submit">Buscar</button>
+     </form>
+
+     <h2>Yahoo</h2>
+
+     <form action="https://ar.search.yahoo.com/search" method="GET" target="_blank">
+        <label>Buscar:
+            <input type="search" name="p"> <!-- variable para almacenar la informaicón que escriba el usuario en este input -->
+        </label>
+        <button type="submit">Buscar</button>
+     </form>
+
+     <!-- BING -->
+     <!-- DUCK DUCK GO -->
+
+     <!-- ! ------------------------------------------------------- -->
+     <!-- ! ------------------------------------------------------- -->
+     <!-- ! ------------------------------------------------------- -->
+
+     <h2>Información del usuario (GET)</h2>
+     <hr>
+
+     <!-- http://localhost:8080/datos-persona?nombre=Max&apellido=Prin&correo=m%40yahoo.com&password=Maxi-facturas&edad=22 -->
+     <!-- http://localhost:8080/datos-persona (?nombre=Max&apellido=Prin&correo=m%40yahoo.com&password=Maxi-facturas&edad=22 ====> QUERY STRING-->
+
+     <form action="http://localhost:8080/datos-persona" method="get">
+
+        <label for="lbl-nombre">Nombre</label>
+        <input type="text" name="nombre" id="lbl-nombre" required>
+
+        <label for="lbl-apellido">Apellido</label>
+        <input type="text" name="apellido" id="lbl-apellido">
+
+        <label for="lbl-correo">Correo</label>
+        <input type="email" name="correo" id="lbl-correo">
+
+        <label for="lbl-password">Contraseña</label>
+        <input type="password" name="password" id="lbl-password">
+
+        <label for="lbl-edad">Edad</label>
+        <input type="number" name="edad" id="lbl-edad">
+
+        <button type="submit">Enviar</button>
+
+     </form>
+
+     <h2>Información del usuario (POST)</h2>
+     <hr>
+
+     <!-- http://localhost:8080/datos-persona?nombre=Max&apellido=Prin&correo=m%40yahoo.com&password=Maxi-facturas&edad=22 -->
+     <!-- http://localhost:8080/datos-persona (?nombre=Max&apellido=Prin&correo=m%40yahoo.com&password=Maxi-facturas&edad=22 ====> QUERY STRING-->
+
+     <form action="http://localhost:8080/datos-usuario" method="post">
+
+        <label for="lbl-nombre">Nombre</label>
+        <input type="text" name="nombre" id="lbl-nombre" required>
+
+        <label for="lbl-apellido">Apellido</label>
+        <input type="text" name="apellido" id="lbl-apellido">
+
+        <label for="lbl-correo">Correo</label>
+        <input type="email" name="correo" id="lbl-correo">
+
+        <label for="lbl-password">Contraseña</label>
+        <input type="password" name="password" id="lbl-password">
+
+        <label for="lbl-edad">Edad</label>
+        <input type="number" name="edad" id="lbl-edad">
+
+        <button type="submit">Enviar</button>
+
+     </form>
+
+
+
+
+
+
+
+      
+    
+</body>
+</html>

@@ -1,0 +1,37 @@
+/* resets */
+/* selector universal */
+/* * { 
+    border: 1px solid red;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} */
+
+.box {
+    background-color: darkgreen;
+    width: 250px;
+    height: 250px;
+    margin-top: 1px;
+}
+
+
+.sin-box-sizing {
+    background-color: darkgray;
+
+    box-sizing: content-box; /* Valor por defecto */
+
+    width: 170px; /* 250px - 30px - 30px - 10px - 10px = 170px */
+    height: 170px; /* 250px - 30px - 30px - 10px - 10px = 170px */
+    padding: 30px; /* izquierda/derecha - arriba/abajo */
+    border: red 10px solid; /* izquierda/derecha - arriba/abajo */
+}
+.con-box-sizing {
+    background-color: darkturquoise;
+
+    box-sizing: border-box; /* Valor por defecto */
+
+    padding-top: 10px;
+    padding-bottom: 50px;
+    border: blue 15px solid;
+}
+
